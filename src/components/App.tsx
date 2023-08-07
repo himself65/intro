@@ -1,4 +1,4 @@
-export default function Home() {
+const App = ({ name = 'Anonymous' }) => {
   return (
     <main className="flex min-h-screen flex-col items-start pt-20 px-5">
       <h1 className="text-3xl font-bold sm:text-5xl">
@@ -12,3 +12,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default App
