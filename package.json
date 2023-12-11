@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "waku dev --with-ssr",
     "build": "waku build --with-ssr",
-    "build:vercel": "waku build && cp -Lr ./dist/.vercel/output ./.vercel/",
+    "build:vercel": "waku build && cp -Lr ./dist/.vercel/output ./.vercel/ && rm -rf ./.vercel/**/node_modules/",
     "start": "waku start --with-ssr"
   },
   "dependencies": {
