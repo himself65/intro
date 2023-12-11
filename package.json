@@ -1,26 +1,31 @@
 {
-  "name": "waku-example",
+  "name": "himself65-intro",
   "version": "0.1.0",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "waku dev --with-ssr",
-    "build": "waku build",
+    "build": "waku build --with-ssr",
     "build:vercel": "waku build && cp -Lr ./dist/.vercel/output ./.vercel/",
     "start": "waku start --with-ssr"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "react": "18.3.0-canary-7118f5dd7-20230705",
-    "react-dom": "18.3.0-canary-7118f5dd7-20230705",
-    "react-server-dom-webpack": "18.3.0-canary-7118f5dd7-20230705",
-    "waku": "0.14.0"
+    "@hono/node-server": "^1.3.1",
+    "hono": "^3.11.4",
+    "react": "18.3.0-canary-5bcade5fc-20231208",
+    "react-dom": "18.3.0-canary-5bcade5fc-20231208",
+    "react-server-dom-webpack": "18.3.0-canary-5bcade5fc-20231208",
+    "waku": "0.18.0-alpha.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.8",
-    "@types/react-dom": "^18.2.4",
-    "autoprefixer": "^10.4.14",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.3"
+    "@swc/core": "1.3.96",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "4.2.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3",
+    "vite": "5.0.4"
   }
 }
