@@ -1,4 +1,4 @@
-const App = ({ name = 'Anonymous' }) => {
+const App = () => {
   return (
     <main className="flex min-h-screen flex-col items-start pt-20 px-5">
       <h1 className="text-3xl font-bold sm:text-5xl">
