@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  waku@0.18.0:
+    hash: kjeixbn6jx6nfxpez5un4njige
+    path: patches/waku@0.18.0.patch
+
 dependencies:
   '@hono/node-server':
     specifier: ^1.3.1
@@ -27,8 +32,8 @@ dependencies:
     specifier: 18.3.0-canary-5bcade5fc-20231208
     version: 18.3.0-canary-5bcade5fc-20231208(react-dom@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(webpack@5.88.2)
   waku:
-    specifier: ^0.18.0-beta.0
-    version: 0.18.0-beta.0(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7)
+    specifier: ^0.18.0
+    version: 0.18.0(patch_hash=kjeixbn6jx6nfxpez5un4njige)(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7)
 
 devDependencies:
   '@swc/core':
@@ -1937,8 +1942,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /waku@0.18.0-beta.0(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7):
-    resolution: {integrity: sha512-jJdKfnp4zXV2D+tmLLeyFrWO7Bfs0mpv0OGOKUCBEiaMimM5qB9snL1Ts+HBX7r7AMhVJ1AkcX2nKIZXu0ARQw==}
+  /waku@0.18.0(patch_hash=kjeixbn6jx6nfxpez5un4njige)(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7):
+    resolution: {integrity: sha512-QJsNOOVoHckBlwWguZxlcDticvlDlRNC8k1a2Da6NHaq7vihUBeDaCEEaAQYtGL4cZfI/wP5MCV8g2JsNp90KQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -1969,6 +1974,7 @@ packages:
       react-server-dom-webpack: 18.3.0-canary-5bcade5fc-20231208(react-dom@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(webpack@5.88.2)
       vite: 5.0.7
     dev: false
+    patched: true
 
   /watchpack@2.4.0:
     resolution: {integrity: sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==}
