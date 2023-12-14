@@ -5,7 +5,7 @@ const App = lazy(() => import('./components/App.js'))
 
 export default defineEntries(
   // renderEntries
-  async (input) => {
+  async () => {
     return {
       App: <App/>
     }
@@ -20,7 +20,8 @@ export default defineEntries(
   },
   // getSsrConfig
   async (pathStr) => {
-    switch (pathStr) {
+    const url = new URL(pathStr, 'http://localhost')
+    switch (url.pathname) {
       case '/':
         return {
           input: '',
