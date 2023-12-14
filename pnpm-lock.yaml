@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   waku@0.18.0:
-    hash: kjeixbn6jx6nfxpez5un4njige
+    hash: x5zorgun6qexheftrwgcbamf2m
     path: patches/waku@0.18.0.patch
 
 dependencies:
@@ -33,7 +33,7 @@ dependencies:
     version: 18.3.0-canary-5bcade5fc-20231208(react-dom@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(webpack@5.88.2)
   waku:
     specifier: ^0.18.0
-    version: 0.18.0(patch_hash=kjeixbn6jx6nfxpez5un4njige)(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7)
+    version: 0.18.0(patch_hash=x5zorgun6qexheftrwgcbamf2m)(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7)
 
 devDependencies:
   '@swc/core':
@@ -1942,7 +1942,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /waku@0.18.0(patch_hash=kjeixbn6jx6nfxpez5un4njige)(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7):
+  /waku@0.18.0(patch_hash=x5zorgun6qexheftrwgcbamf2m)(@hono/node-server@1.3.1)(@swc/core@1.3.100)(@vitejs/plugin-react@4.2.1)(hono@3.11.4)(react-server-dom-webpack@18.3.0-canary-5bcade5fc-20231208)(react@18.3.0-canary-5bcade5fc-20231208)(vite@5.0.7):
     resolution: {integrity: sha512-QJsNOOVoHckBlwWguZxlcDticvlDlRNC8k1a2Da6NHaq7vihUBeDaCEEaAQYtGL4cZfI/wP5MCV8g2JsNp90KQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
