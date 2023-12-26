@@ -1,14 +1,13 @@
-import { Layout } from './Layout.js'
-import { ThemeButton } from './ThemeButton.js'
-import { Description } from './Description.js'
-import { Banner } from './Banner.js'
+import { Layout } from '../components/Layout.js'
+import { ThemeButton } from '../components/ThemeButton.js'
+import { Description } from '../components/Description.js'
+import { Banner } from '../components/Banner.js'
+import { Root } from '../layouts/Root.js'
 
-const App = () => {
+const Page = () => {
   return (
     <Layout>
-      <div
-        className="flex min-h-screen flex-col items-start px-5 bg-white dark:bg-gray-900 text-xl font-light dark:text-gray-300"
-      >
+      <Root>
         <main
           className="flex flex-row items-center w-full flex-1">
           <div
@@ -20,9 +19,9 @@ const App = () => {
           </div>
         </main>
         <Banner/>
-      </div>
+      </Root>
     </Layout>
   )
 }
 
-export default App
+export default Page
