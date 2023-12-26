@@ -2,6 +2,6 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   ssr: {
-    external: ['glob']
+    external: ['glob', 'next-mdx-remote']
   }
 })
