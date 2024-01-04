@@ -1,3 +1,4 @@
+import '../style.css'
 import { Layout } from './Layout.js'
 import { ThemeButton } from './ThemeButton.js'
 import { Description } from './Description.js'

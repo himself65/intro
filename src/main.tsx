@@ -15,7 +15,7 @@ const rootElement = (
 )
 
 if ((globalThis as any).__WAKU_SSR_ENABLED__) {
-  hydrateRoot(document.getElementById('root')!, rootElement, {
+  hydrateRoot(document.body, rootElement, {
     onRecoverableError (incomingError) {
       if (typeof incomingError === 'object' &&
         incomingError !== null &&
@@ -27,5 +27,5 @@ if ((globalThis as any).__WAKU_SSR_ENABLED__) {
     }
   })
 } else {
-  createRoot(document.getElementById('root')!).render(rootElement)
+  createRoot(document.body).render(rootElement)
 }
