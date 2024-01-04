@@ -1,11 +1,13 @@
-'use client'
 import { PropsWithChildren, ReactElement } from 'react'
-import { ThemeProvider } from 'next-themes'
+import { Banner } from '../components/Banner.js'
 
 export const Layout = ({ children }: PropsWithChildren): ReactElement => {
   return (
-    <ThemeProvider attribute="class">
+    <>
       {children}
-    </ThemeProvider>
+      <Banner/>
+    </>
   )
 }
+
+export default Layout
