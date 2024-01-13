@@ -1,5 +1,3 @@
-import { SpeedInsights } from '@vercel/speed-insights/react'
-import { Analytics } from '@vercel/analytics/react'
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { Root, Slot } from 'waku/client'
@@ -7,8 +5,6 @@ import { Root, Slot } from 'waku/client'
 const rootElement = (
   <StrictMode>
     <Root>
-      <SpeedInsights/>
-      <Analytics/>
       <Slot id="App"/>
     </Root>
   </StrictMode>
