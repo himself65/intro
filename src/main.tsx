@@ -10,7 +10,7 @@ const rootElement = (
   </StrictMode>
 )
 
-if (import.meta.env.WAKU_HYDRATE) {
+if (document.body.dataset.hydrate) {
   hydrateRoot(document.body, rootElement, {
     onRecoverableError (incomingError) {
       if (typeof incomingError === 'object' &&

@@ -3,19 +3,20 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@8.15.5",
   "scripts": {
-    "dev": "waku dev --with-ssr",
-    "build": "waku build --with-ssr",
-    "build:vercel": "waku build --with-ssr --with-vercel",
-    "start": "waku start --with-ssr"
+    "dev": "waku dev",
+    "build": "waku build",
+    "build:vercel": "waku build --with-vercel",
+    "start": "waku start"
   },
   "dependencies": {
     "foxact": "^0.2.30",
     "next-themes": "^0.2.1",
-    "react": "18.3.0-canary-b30030471-20240117",
-    "react-dom": "18.3.0-canary-b30030471-20240117",
-    "react-server-dom-webpack": "18.3.0-canary-b30030471-20240117",
-    "waku": "^0.19.1"
+    "react": "18.3.0-canary-56e20051c-20240311",
+    "react-dom": "18.3.0-canary-56e20051c-20240311",
+    "react-server-dom-webpack": "18.3.0-canary-56e20051c-20240311",
+    "waku": "^0.20.0-beta.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.48",
